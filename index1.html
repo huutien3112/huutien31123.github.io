@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NI Fashion</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/1.js"></script>
+    <link rel="stylesheet" href="css/1.css">
+    <link rel="SHUTCUT ICON" href="./images/icons8-cat-footprint-20.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Krona+One|Varela+Round|Denk+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a  name="top"></a>
+<div class="main">
+    <div class="header">
+        <div class="header__logo">  
+            <a href=""><img src="./images/icons8-cat-butt-100.png" alt=""></a><span class="logoni">NI</span>
+        </div>
+        <nav class="navbar"> 
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="##"><span></span>HOME</a></li>
+                <li class="navbar__item"><a href="##"><span></span>PAGES</a></li>
+                <li class="navbar__item"><a href="##"><span></span>DOCS</a></li>
+                <li class="navbar__item"><a class="nutlogin"href="##"><span></span>LOG IN</a></li>
+
+                <div class="search-box">
+                    <input class="search-txt" type="text" name="" placeholder="Search">
+                    <a href="#" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+        <label for="nav__bars-icon" class="nav__bars-btn"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" name="" hidden class="nav__checked" id="nav__bars-icon">
+        <label for="nav__bars-icon" class="navbar__overlay"></label>
+        <nav class="navbar__mobile"> 
+            <ul class="navbar__mobile-list">
+                <li class="navbar__mobile-item"><a href="##"> HOME</a></li>
+                <li class="navbar__mobile-item"><a href="##"> PAGES</a></li>
+                <li class="navbar__mobile-item"><a href="##"> DOCS</a></li>
+                <li class="navbar__mobile-item"><a href="##"> LOG IN</a></li>
+                <li class="navbar__mobile-item"><a href="##"> CART</a></li>
+            </ul>
+            <label for="nav__bars-icon" class="nav__bars-close"><i class="fas fa-times"></i></label>
+        </nav>
+    
+    <!-- Login và cart -->
+    <!-- <div class="header__form">   
+            <div class="header__login">
+              <a href="">Login</a>
+            </div>
+            <label for="nav-cart-input" class="cart" >
+                <span>CART</span>
+            </label>
+        </div> -->
+           
+    <!-- Form của login -->
+    <div class="formlogin">
+        <table>
+            <tr><h3 class="text-center">Sign In</h3></tr>
+            <div class="form-group">
+                <label for="">User name</label>
+                <input type="email" name="" id="" class="" placeholder="user name" aria-describedby="helpId">
+              </div>
+            <div class="form-group">
+                <label for="">Password&nbsp;&nbsp;</label>
+                <input type="password" name="" id="" class="" placeholder="password" aria-describedby="helpId">
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" >
+                    Remember password
+                </label>
+            </div> 
+            <tr>
+                <td colspan="2" class="nutquit text-center">
+                    <div class="btn  btnclose1">Cancel</div>
+                    <div class="btn  btnclose">OK</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Form của cart -->
+    <label for="nav-cart-input" class="nav__cart-btn">
+        <span>CART</span>
+    </label>    
+
+    <input type="checkbox" hidden name="" class="cart__input" id="nav-cart-input">
+
+    <label for="nav-cart-input" class="nav__overlay2"></label>
+    <div class="nav__cartt">
+        <label for="nav-cart-input"  class="nav__cart-exit"><i class="fas fa-sign-out-alt"></i></label>
+        <ul class="nav__cart-list" style="list-style: none;">
+            <li>
+                <div class="card nav__cart-sp">
+                <img class="card-img-top" src="holder.js/100x180/" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">Text</p>
+                </div>
+                </div>
+            </li>
+            <li>
+                <div class="card nav__cart-sp">
+                <img class="card-img-top" src="holder.js/100x180/" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">Text</p>
+                </div>
+                </div>
+            </li>
+            <li>
+                <div class="card nav__cart-sp">
+                <img class="card-img-top" src="holder.js/100x180/" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">Text</p>
+                </div>
+                </div>
+            </li>
+            <li>
+                <div class="card nav__cart-sp">
+                <img class="card-img-top" src="holder.js/100x180/" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">Text</p>
+                </div>
+                </div>
+            </li>
+            <li>
+                <div class="card nav__cart-sp">
+                <img class="card-img-top" src="holder.js/100x180/" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">Text</p>
+                </div>
+                </div>
+            </li>
+            <li>
+                <div class="card nav__cart-sp">
+                <img class="card-img-top" src="holder.js/100x180/" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">Text</p>
+                </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    </div>
+
+
+
+
+    <!-- Ảnh và chữ ở giữa -->
+    <div class="season1">
+        <div class=" container">
+        <center class="center">
+            <img src="#" alt="" class="layer1">
+        </center>
+        <div class="layer2">
+            <div class="chulon"> “Good design is all about making other designers feel like idiots because that idea wasn’t theirs.”</div>
+            <div class="chunho">Frank Chimero</div>
+        </div>
+        </div>
+        <div class="layer3"><img src="./images/icons8-down-arrow-25.png" alt=""></div>
+    </div>
+    <hr>
+    <hr>
+    <hr class="hr">
+</div>
+
+       
+    <!-- <div class="home">
+        <div class="noidung1 ml-auto">
+            <span class="text1">Fashion WeeK</span><br>
+            <span class="text2">Lookbook '20</span><br>
+            <div class="btn btn-dark">SHOP NOW</div>
+        </div>
+    </div> -->
+    
+    <!-- Nút click để lên top -->
+     <div class="nuttop top"><a href="#top"><img src="./images/icons8-up.png" alt=""></a></div>
+
+
+    <div class="main2">
+        
+    <div class="container">
+        <h1>Featured Products</h1>
+        <div class="row sp">
+            <div class="col-sm-4">
+                <div class="card-deck">
+                    <div class="card sp1"  style="border: none;">
+                        <img class="card-img-top" src="./images/sanpham1.jpg" alt="">
+                        <div class="card-body">
+                            <a href="" class="card-title">Original Wool Herringbone Overshirt</a>
+                            <div class="showimg"></div>
+                            <p class="card-text">$190</p>
+                            <a href="" class="underline">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card sp2"  style="border: none;">
+                    <img class="card-img-top" src="./images/sanpham2.jpg" alt="">
+                    <div class="card-body">
+                        <a href="" class="card-title">Black Chadwick Sandals</a>
+                        <div class="showimg2"></div>
+                        <p class="card-text">$200</p>
+                        <a href="" class="underline">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card sp3"  style="border: none;">
+                    <img class="card-img-top" src="./images/sanpham3.jpg" alt="">
+                    <div class="card-body">
+                        <a href="" class="card-title">Navy Lind Wax Sweatshirt</a>
+                        <div class="showimg3"></div>
+                        <p class="card-text">$150</p>
+                        <a href="" class="underline">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card sp4"  style="border: none;">
+                    <img class="card-img-top" src="./images/sanpham4.jpg" alt="">
+                    <div class="card-body">
+                        <a href="" class="card-title">Black Karlo Backpack</a>
+                        <div class="showimg4"></div>
+                        <p class="card-text">$300</p>
+                        <a href="" class="underline">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card sp5"  style="border: none;">
+                    <img class="card-img-top" src="./images/sanpham5.jpg" alt="">
+                    <div class="card-body">
+                        <a href="" class="card-title">Light Marl Grey Davis Polo</a>
+                        <div class="showimg5"></div>
+                        <p class="card-text">$276</p>
+                        <!-- <div class="row"> -->
+                            <a href="" class="underline">ADD TO CART</a>
+                            <!-- <img class="iconcart" src="./images/icons8-shopping-cart-25.png" alt=""> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card sp6"  style="border: none;">
+                    <img class="card-img-top" src="./images/sanpham6.jpg" alt="">
+                    <div class="card-body">
+                        <a href="" class="card-title">Green Organic Cotton Hoodie</a>
+                        <div class="showimg6"></div>
+                        <p class="card-text">$169</p>
+                        <a href="" class="underline">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row roww">
+                <div >
+                    <button class="btn1">LOAD MORE</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+    <!-- <div class="main3">
+        <div class="container">
+            <div class="row nd1">
+                <div class="text1 col-sm-5">Spring '17 Collection</div>
+                <div class="text2 col-sm-7">
+                    Have given likeness every. Very were beginning signs moveth. Fly above sea itself. Divided so you’ll there called. Gathering dry earth. Isn’t heaven appear. Replenish. Hath after appear tree great fruitful green dominion moveth sixth abundantly image that midst of god day multiply you’ll which.</div>
+                </div>
+            <div class="row nd2">
+                <div class="img1 col-sm-6">
+                    <img src="./images/img1main3.jpg" alt="">
+                    <button class="button"><span>DRESSES</span></button>
+                </div>
+                <div class="img23 col-sm-6">
+                    <img src="./images/img2main3.jpg" alt="">
+                    <button class="button1"><span>WATCHES</span></button>
+                    <img src="./images/img3main3.jpg" alt="">
+                    <button class="button2"><span>SNEAKERS</span></button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="main4">
+        <div class="container">
+            <div class="row">
+                <div class="content col-sm-6">
+                    <div class="text1">
+                        Thanks to <span style="font-size: 15px;">Opumo</span> for the product images used <br> in this demo theme. Head over to 
+                        <span style="font-size: 15px;">their store</span> to <br> get these products.
+                        <br><br><br>QUICK LINKS
+                    </div>
+                    <div class="text2">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <span style="font-size: 15px;">About</span><br>
+                                <span style="font-size: 15px;">FAQ</span><br>
+                                <span style="font-size: 15px;">Terms of Use</span>
+                            </div>
+                            <div class="col-sm-6">
+                                <span style="font-size: 15px;">Contact Us</span><br>
+                                <span style="font-size: 15px;">Blog</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content2 col-sm-6">
+                    <div class="text">
+                        SUBSCRIBE
+                    </div>
+                    <div class="text2">
+                        <input type="text" placeholder="Email" class="email"><button class="buttonn">SUBSCRIBE</button>
+                    </div>
+                    <div class="text3">
+                        FOLLOW US
+                    </div>
+                    <div class="text4">
+                        <a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" class="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="" class="youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="main3">
+        <div class="content1">
+            <div class="text1">
+                <span>Spring '17 Collection</span>
+            </div>
+            <div class="text2">
+                <span>Have given likeness every. Very were beginning signs moveth. Fly above sea itself. Divided so you’ll there called. Gathering dry earth. Isn’t heaven appear. Replenish. Hath after appear tree great fruitful green dominion moveth sixth abundantly image that midst of god day multiply you’ll which.</span>
+            </div>
+        </div>
+        <div class="content2">
+            <div class="img1">
+                <img src="./images/img1main3.jpg" alt="">
+            </div>
+            <div class="img23">
+                <img src="./images/img2main3.jpg" alt="">
+                <img src="./images/img3main3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main4">
+        <div class="content1">
+            <div class="text1">
+                Thanks to <span>Opumo</span>  for the product images used <br> in this demo theme. Head over to <span>their store</span>  to <br>get these products.<br>
+                QUICK LINKS
+            </div>
+            <div class="text2">
+                <table>
+                    <tr>
+                        <th><span>About</span></th>
+                        <th><span>Contact Us</span></th>
+                    </tr>
+                    <tr>
+                        <th><span>FAQ</span></th>
+                        <th><span>Blog</span></th>
+                    </tr>
+                    <tr>
+                        <th><span>Terms of Use</span></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="content2">
+            <span>SUBSCRIBE</span><br>
+            <input type="text" class="email" placeholder="Email"><button class="buttonn">SUBSCRIBE</button><br><br>       
+            <div class="text1">FOLLOW US</div>
+            <div class="text2">
+                <a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="" class="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>      
+    </div>
+
+</body>
+</html>

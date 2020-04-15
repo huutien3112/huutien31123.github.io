@@ -1,0 +1,996 @@
+*{margin: 0;padding: 0;}
+html,body{width: 100%; height: 100%;}
+
+/* click Cart */
+/* .nav__overlayy{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: ni initial 0.5s; 
+}
+.nav__cart-close{
+    font-size: 1.4rem;
+    color: #666;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.nav__cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: white;
+    transform: translateX(100%);
+    transition: 0.5s;
+    opacity: 0;
+    transition: transform linear 0.3s, opacity linear 0.5s;
+
+}
+.nav__cart-list{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.nav__cart-link{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 8px 0;
+    font-size: 1.4rem;
+}
+.nav__input:checked ~ .nav__overlayy{
+    display: block;
+}
+.nav__input:checked ~ .nav__cart{
+    transform: translateX(0%);
+    opacity: 1;
+}
+@keyframes ni{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+} */
+
+
+/* Phần nav-mobile */
+nav.navbar__mobile{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    background: #fff;
+    padding: 100px 0px 0px  90px;
+    transform: translateX(100%);
+    z-index: 10;
+    animation: fadeIn 0.2s linear;
+    transition: opacity 0.2s linear, transform 0.2s linear;
+}
+nav.navbar__mobile ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+}
+.nav__bars-btn{
+    position: absolute;
+    top: 25px;
+    right: 158px;
+    color: #fff;
+    font-size: 34px;
+    display: none;
+}
+.nav__bars-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px 30px;
+    font-size: 30px;
+}
+/* .navbar__icon {
+    position: relative;
+    top: 18px;
+    right: -69%;
+    color: #fff;
+    font-size: 36px;
+    z-index: 10;
+} */
+/* .mobile{
+    position: fixed;
+    width: 300px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 11;
+    background: #fff;
+} */
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+
+.header{
+    position: fixed;
+    height: 112px;
+    background: black;
+    display: flex;
+    z-index: 5;
+    width: 100%;
+    transition: 0.5s;
+}
+.showheader{
+    transition: 0.5s;
+    position: fixed;
+    height: 112px;
+    background-color: rgba(0, 0, 0, 0.658);
+}
+.header__logo {
+    width: 256px;
+    background-color: #222;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding-top: 20px;
+    background-color: black;
+    transition: 0.5s;
+}
+.showlogo{
+    width: 200px;
+}
+.header__logo span{
+    font-family: 'Krona One';
+    font-size: 40px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.header__logo img{
+    width: 100px;
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+
+
+
+/* navbar */
+nav.navbar{
+    padding-top: 30px;
+    margin-left: 150px ;
+    width: 788px;
+}
+
+nav.navbar a:hover{
+    color: white;
+    text-decoration: none;    
+}
+.navbar__list{
+    display: flex;
+    
+
+}
+.navbar__item{
+    list-style: none;
+    padding: 0px 40px;
+}
+.navbar__item a {
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding: 15px 0;
+    color: rgba(255, 255, 255, 0.637);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    font-family: 'Varela Round' ;  
+}
+.navbar__item a:hover{
+    color: white;
+    letter-spacing: 3px;
+}
+
+/* click bars */
+.navbar__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 5;
+
+}
+.nav__checked:checked ~ .navbar__overlay{
+    display: block;
+}
+.nav__checked:checked ~ .navbar__mobile{
+    transform: translateX(0%);
+    transition: transform 0.2s linear;
+}
+/* .navbar__item a span{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: -100%;
+    
+    height: 2px;
+    color: white;
+}
+.navbar__item a:hover span{
+    left: 100%;
+    transition: 1s;
+}
+.navbar__item:hover a{
+    color: var(--color-text);
+} */
+
+
+
+/* .header__form{
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 33px 35px;
+    margin-right: 200px;
+
+} */
+/* .header__form a{
+    text-decoration: none;
+    color: rgb(197, 101, 101);
+}
+.header__login{
+    width: 100px;
+    height: 50px;
+    border: 1px solid #10ddb4;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+
+}
+.header__login:hover a{ 
+    color: var(--color-text);
+} */
+
+
+/* responsive */
+
+/* Mobile width < 740px */
+@media only screen and (max-width: 46.1875em){
+    nav.navbar{
+        display: none;
+    }
+    .nav__cart-btn{
+        display: none;
+    }
+    .header{
+        width: 739px;
+        margin-right: unset;
+        padding-right: unset;
+
+    }
+    .nav__bars-btn{
+        display: block;
+    }
+    .main .season1{
+        width: 739px;
+    }
+    .main .season1 hr{
+        width: 739px;
+    }
+    .main2  .container{
+        width: 300px;
+        display: block;
+    }
+    .main3{
+        width: 740px;
+    }
+    .main3 .content2 img{
+        max-width: 100%;
+    }
+    .main4{
+        max-width: 133%;
+        height: 500px;
+    }
+    .main4 .content2{
+        width: 740px;
+    }
+    .main4 .content1{
+        width: 740px;
+    }
+}
+
+/* Table width >= 740px and width < 1024px  */
+@media only screen and (max-width: 63.9375em) and (min-width: 46.25em){
+    nav.navbar{
+        display: none;
+    }
+    .nav__cart-btn{
+        display: none;
+    }
+    .header{
+        width: 1023px;
+    }
+    .nav__bars-btn{
+        display: block;
+    }
+    .main .season1{
+        width: 1023px;
+    }
+    .main2  .container{
+        text-align: center;
+        max-width: 100%;
+        margin-left: 150px;
+    }
+    .main3{
+        width: 1023px;
+    }
+    .main3 .content2 img{
+        max-width: 100%;
+    }
+    .main4{
+        padding: 100px 100px;
+        width: 1023px;
+    }
+    .main4 .content2{
+        width: 1023px;
+    }
+    .main4 .content1{
+        width: 1023px;
+    }
+}
+
+
+
+
+/* Đổi ảnh */
+.season1{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+
+}
+.season1 .container img{
+    position: absolute;
+    height: 700px;
+    width: 100%;
+    animation: Tien2 20s infinite;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    background-size: cover;
+}
+
+@keyframes Tien{
+    from {transform: scale(1);}
+    to {transform: scale(1.1);}
+}
+.season1 .layer2{
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    left: 30%;
+    font-family: tahoma;
+    color: white;
+    text-align: center;
+    animation-delay: 0.5s;
+    font-family: 'Denk One';
+    font-size: 30px;
+}
+.season1 .layer2{
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+    left: -100%;
+    animation: nu 3s forwards;
+}
+@keyframes nu{
+    0%{left: -100%; opacity: 0;}
+    100%{left: 10%; opacity: 1;}
+}
+.season1 .layer2 .chunho{
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-right: 90px;
+    margin-top: 30px;
+    font-family: 'Denk One' ;
+}
+
+@keyframes Tien2{
+    0%{background-image: url(../images/bg.jpg); transform: scale(1)}
+    20%{background-image:  url(../images/bg11.jpg); transform: scale(1.2)}
+    40%{background-image:  url(../images/bg4.jpg); transform: scale(1.1)}
+    60%{background-image:  url(../images/bg5.jpg); transform: scale(1.2)}
+    80%{background-image:  url(../images/bg6.jpg); transform: scale(1.1)}
+    100%{background-image:  url(../images/bg7.jpg); transform: scale(1.2)}
+}
+.layer1{
+    animation: Tien2 40s infinite;
+}
+hr.hr{
+    margin-bottom: 150px;
+}
+
+
+
+
+/* Mũi tên chạy lên xuống wed */
+.season1 .layer3 img{
+    position: absolute;
+    bottom: 15%;
+    right: 48%;
+    transition: 0.5s;
+    z-index: 3;
+    animation: ni 7s infinite;
+}
+@keyframes ni{
+    0%{bottom: 10%;}
+    10%{bottom: 15%;}
+    20%{bottom: 10%;}
+    30%{bottom: 15%;}
+    40%{bottom: 10%;}
+    50%{bottom: 15%;}
+    60%{bottom: 10%;}
+    70%{bottom: 15%;}
+    80%{bottom: 10%;}
+    90%{bottom: 15%;}
+    100%{bottom: 10%;}
+}
+
+
+
+/*  Chỉnh 1 số thứ trên nav menu */
+/* Phần cart 2 bên góc phải màn hình  */
+/* .cart span{
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+    padding: 5px 5px 5px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.cart span:hover{
+    color: white;
+    border: 1px white solid;
+} */
+
+
+
+/* Phần nền mờ */
+.nav__overlay2{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9;
+    display: none;
+}
+/* Phần sp của cart khi click vào CART */
+.nav__cartt{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 500px;
+    max-width: 100%;
+    background-color: white;
+    z-index: 10;
+    transform: translateX(100%);
+
+}
+.nav__cart-list{
+    margin: 100px 0px 0px 100px;
+    text-decoration: none;
+
+
+}
+.nav__cart-sp{
+    text-decoration: none;
+}
+.nav__cart-exit{
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.cart__input:checked ~ .nav__overlay2{
+    display: block;
+}
+.cart__input:checked ~ .nav__cartt{
+    transform: translateX(0%);
+}
+/* chữ CART */
+.nav__cart-btn{
+    color: rgba(255, 255, 255, 0.637);
+    font-family: 'Varela Round' ; 
+    font-weight: bold; 
+    margin: 45px 50px 0px 0px;
+    transition: 0.3s;
+    font-size: 17px;
+
+}
+.nav__cart-btn:hover{
+    color: white;
+    letter-spacing: 3px;
+}
+
+
+
+
+/* Phần đổi cart khi lăn menu */
+/* .cart.switchcart span{
+    color: black;
+    border: 1px black solid;
+    padding: 5px;
+    cursor: pointer;
+}
+.cart .clear span:hover{
+    color: black;
+    border: 1px white solid;
+} */
+
+
+/* Phần login hiện ra khi click vào Login */
+.formlogin{
+    opacity: 0;
+    background-image: url(../images/login1.jpg);
+    width: 500px;
+    height: 250px;
+    border: 0px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    padding: 20px 0px 0px 150px;
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    z-index: 6;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: scale(0.5s);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+.hienlogin{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.formlogin .btnclose{
+    border: none white solid;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    color: black;
+    margin: 10px 0px 0px 0px;
+}
+.formlogin .btnclose:hover{
+    color: black;
+    box-shadow: 1px 1px 20px 5px black;
+    transition: 0.5s;
+}
+.formlogin .btnclose1{
+    margin: 10px 0px 0px 100px;
+    border: none white solid;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    color: black;
+}
+.formlogin .btnclose1:hover{
+    color: black;
+    box-shadow: 1px 1px 20px 5px black;
+    transition: 0.5s;
+}
+.formlogin h3{
+    margin-right: 60px;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 40px;
+}
+.home{
+    margin-top: 280px;
+} 
+
+/* Phần search hiện ra khi hover vào search */
+.search-box{
+    position: absolute;
+    top: 52%;
+    left: 70%;
+    transform: translate(6%, -50%);
+    background: white;
+    height: 40px;
+    border-radius: 40px;
+}
+.search-btn{
+    color: black;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    background-color: rgba(255, 255, 255, 0.637);
+    
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 38px;
+    width: 0px;
+    
+
+}
+.search-box:hover > .search-txt{
+    width: 170px;
+    padding: 0 6px;
+
+}
+.search-box:hover > .search-btn{
+    background: black;
+    color: white;
+}
+
+
+
+/* phần sản phẩm main2  */
+.main2 h1{
+    font-family: 'Advent Pro', sans-serif;
+    margin: 0px 0px 50px 0px;
+    text-decoration: none;
+}
+.main2 .container a{
+    text-decoration: none;
+    color: black;
+}
+.main2 .sp{
+    margin-bottom: 50px;
+}
+
+
+/* Đổi ảnh khi rê chuột vào sản phẩm */
+.showimg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 473px;
+    width: 349px;
+    opacity: 0;
+    transition: 0.5s;
+    background-image: url(../images/sanpham11.jpg);
+}
+.container .showimg:hover {
+    opacity: 1;
+}
+.showimg2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 473px;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-image: url(../images/sanpham22.jpg);
+}
+.container .showimg2:hover {
+    opacity: 1;
+}
+.showimg3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 473px;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-image: url(../images/sanpham33.jpg);
+}
+.container .showimg3:hover {
+    opacity: 1;
+}
+.showimg4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 473px;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-image: url(../images/sanpham44.jpg);
+}
+.container .showimg4:hover {
+    opacity: 1;
+}
+.showimg5 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 473px;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-image: url(../images/sanpham55.jpg);
+}
+.container .showimg5:hover {
+    opacity: 1;
+}
+.showimg6 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 473px;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-image: url(../images/sanpham66.jpg);
+}
+.container .showimg6:hover {
+    opacity: 1;
+}
+
+
+
+/* Khi rê chuột vào chữ */
+.main2 a.underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+    top: -10px;
+    color: rgb(38, 141, 38);
+    font-weight: bold;
+}
+.main2 a.underline:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 100%;
+    bottom: -3px;
+    background: rgb(38, 141, 38);
+    height: 3px;
+    transition-property: left right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.main2 a.underline:hover:after,
+.main2 a.underline:focus:after,
+.main2 a.underline:active:after {
+    right: 0;
+}
+
+
+
+/* Thay đổi font chữ */
+.main2 a{
+    font-family: 'Poppins', sans-serif;
+}
+.main2 p{
+    font-family: 'Poppins', sans-serif;
+}
+.main2 .container .roww .btn1{
+    right: 50%;
+    margin-top: 30px;
+    border-radius: none;
+    border: 1px rgb(192, 192, 192) solid;
+    padding: 10px 20px 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: 0.5s;
+    background-color: white;
+}
+.main2 .container .roww .btn1:hover{
+    background-color: black;
+    color: white;
+
+}
+
+
+
+/* Phần main 3 */
+.main3{
+    margin-top: 100px;
+    background-color: #3B416B;
+    height: 880px;
+    right: 0;
+    left: 0;
+    padding: 80px 100px 0px 100px;
+}
+.main3 .content1{
+    display: flex;
+    margin-bottom: 50px;
+}
+.main3 .content1 .text1{
+    font-size: 40px;
+    color: white;
+    width: 1400px;
+    margin-right: 100px ;
+}
+.main3 .content1 .text2{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.main3 .content2{
+    display: flex;
+}
+.main3 .content2 .img1 img{
+    height: 550px;
+    width: 550px;
+    margin-right: 10px;
+    transition: 0.2s;
+    transform: scale(1);
+    cursor: pointer;
+    border-radius: 7px;
+    
+}
+.main3 .content2 .img1 img:hover{
+    transform: scale(1.02);
+    
+}
+.main3 .content2 .img23 img{
+    height: 277px;
+    width: 600px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 7px;
+}
+.main3 .content2 .img23 img:hover{
+    transform: scale(1.02);
+}
+
+
+
+
+
+.main4{
+    background-color:rgba(0, 0, 0, 0.925);
+    right: 0;
+    left: 0;
+    height: 500px;
+    display: flex;
+    padding: 100px 100px;
+}
+.main4 .content1{
+    color: rgba(204, 204, 204, 0.473);
+    font-size: 17px;
+}
+.main4 .content1 span {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+    top: 0px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+.main4 .content1 span:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 100%;
+    bottom: 0px;
+    background: white;
+    height: 1px;
+    transition-property: left right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.main4 .content1 span:hover:after,
+.main4 .content1 span:focus:after,
+.main4 .content1 span:active:after {
+    right: 0;
+}
+.main4 .content1 .text2 table span{
+    font-size: 17px;
+}
+
+
+
+
+
+.main4  input{
+    margin-top: 5px;
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.404);
+    border: none;
+    color: white;
+    transition: 0.5s;
+}
+.main4  input:hover{
+    background-color: white;
+    transition: 0.5s;
+    color: black;
+}
+.main4 button{
+    width: 100px;
+    height: 49px;
+
+    font-size: 17px;
+    border: none;
+}
+.main4 button:hover{
+    color: white;
+    background-color: black;
+    transition: 0.2s;
+    border: none;
+}
+.main4 .content2 {
+    color: rgba(204, 204, 204, 0.473);
+    font-size: 17px;
+    margin-left: 200px;
+}
+.main4 .content2 a{
+    text-decoration: none;
+    color: rgba(204, 204, 204, 0.473);
+    font-size: 17px;
+    margin-right: 5px;
+}
+.main4 .content2 a:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+
+
+/* nút back to top */
+.nuttop{
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    opacity: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.hien{
+    opacity: 1;
+    visibility: visible;
+}
+
