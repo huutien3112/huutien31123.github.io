@@ -557,15 +557,15 @@ hr.hr{
 /* Phần login hiện ra khi click vào Login */
 .formlogin{
     opacity: 0;
-    background-image: url(../images/login1.jpg);
+    background-color: white;
     width: 500px;
-    height: 250px;
+    height: 280px;
     border: 0px solid rgba(255, 255, 255, 0.6);
     border-radius: 5px;
-    padding: 20px 0px 0px 150px;
+    text-align: center;
     position: fixed;
     top: 30%;
-    left: 35%;
+    left: 30%;
     z-index: 6;
     visibility: hidden;
     transition: 0.5s;
@@ -574,7 +574,12 @@ hr.hr{
     font-size: 15px;
     font-weight: bold;
     color: black;
+    padding: 20px 0;
 }
+table{
+    
+}
+
 .hienlogin{
     opacity: 1;
     visibility: visible;
@@ -585,25 +590,27 @@ hr.hr{
     padding: 5px 10px 5px 10px;
     font-weight: bold;
     color: black;
-    margin: 10px 0px 0px 0px;
+    margin: 10px 0px 0px 10px;
 }
 .formlogin .btnclose:hover{
     color: black;
-    box-shadow: 1px 1px 20px 5px black;
+    box-shadow: 1px 1px 15px 5px black;
     transition: 0.5s;
 }
 .formlogin .btnclose1{
     margin: 10px 0px 0px 100px;
     border: none white solid;
-    padding: 5px 10px 5px 10px;
+    left: 30%;
     font-weight: bold;
     color: black;
 }
 .formlogin .btnclose1:hover{
     color: black;
-    box-shadow: 1px 1px 20px 5px black;
+    box-shadow: 1px 1px 15px 5px black;
     transition: 0.5s;
 }
+
+
 .formlogin h3{
     margin-right: 60px;
     font-family: 'Odibee Sans', cursive;
@@ -613,8 +620,30 @@ hr.hr{
     margin-top: 280px;
 } 
 
+input[type = email]{
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    padding: 5px 10px;
+}
+input[type = password]{
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    padding: 5px 10px;
+}
+input[type = checkbox]{
+    width: 20px;
+    height: 20px;
+
+}
+.form-check-label span{
+    margin-top: 5px;
+}
+
+
+
+
 /* Phần search hiện ra khi hover vào search */
-.search-box{
+/* .search-box{
     position: absolute;
     top: 52%;
     left: 70%;
@@ -659,8 +688,65 @@ hr.hr{
 .search-box:hover > .search-btn{
     background: black;
     color: white;
+} */
+form{
+    position: relative;
+    top: 25px;
+    left: 11%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
 }
 
+form input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: #07051a;
+    color: white;
+}
 
 
 /* phần sản phẩm main2  */
@@ -685,11 +771,11 @@ hr.hr{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 473px;
-    width: 349px;
+    height: 78.5%;
+    width: 100%;
     opacity: 0;
     transition: 0.5s;
-    background-image: url(../images/sanpham11.jpg);
+    background-image: url(../images/sanpham11.jpg) ;
 }
 .container .showimg:hover {
     opacity: 1;
@@ -700,7 +786,7 @@ hr.hr{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 473px;
+    height: 78.5%;
     width: 100%;
     opacity: 0;
     transition: 0.5s;
@@ -715,7 +801,7 @@ hr.hr{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 473px;
+    height: 78.5%;
     width: 100%;
     opacity: 0;
     transition: 0.5s;
@@ -730,7 +816,7 @@ hr.hr{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 473px;
+    height: 78.5%;
     width: 100%;
     opacity: 0;
     transition: 0.5s;
@@ -745,7 +831,7 @@ hr.hr{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 473px;
+    height: 78.5%;
     width: 100%;
     opacity: 0;
     transition: 0.5s;
@@ -760,7 +846,7 @@ hr.hr{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 473px;
+    height: 78.5%;
     width: 100%;
     opacity: 0;
     transition: 0.5s;
@@ -809,10 +895,11 @@ hr.hr{
 .main2 p{
     font-family: 'Poppins', sans-serif;
 }
-.main2 .container .roww .btn1{
-    right: 50%;
-    margin-top: 30px;
-    border-radius: none;
+.button__load-more{
+    display: flex;
+}
+.button__load-more .btn1{
+    margin: 0 auto;
     border: 1px rgb(192, 192, 192) solid;
     padding: 10px 20px 10px 20px;
     font-family: 'Poppins', sans-serif;
@@ -820,7 +907,7 @@ hr.hr{
     transition: 0.5s;
     background-color: white;
 }
-.main2 .container .roww .btn1:hover{
+.button__load-more .btn1:hover{
     background-color: black;
     color: white;
 
@@ -854,36 +941,50 @@ hr.hr{
     color: rgba(255, 255, 255, 0.5);
 }
 
-.main3 .content2{
-    display: flex;
-}
-.main3 .content2 .img1 img{
+.main3 .content2__img{
     height: 550px;
-    width: 550px;
-    margin-right: 10px;
-    transition: 0.2s;
+    width: 100%;
+    position: relative;
+}
+
+.content2__img .anh1 img{
+    position: absolute;
+    left: 0;
+    width: 46%;
+    height: 550px;
     transform: scale(1);
-    cursor: pointer;
+    transition: 0.5s;
     border-radius: 7px;
-    
-}
-.main3 .content2 .img1 img:hover{
-    transform: scale(1.02);
-    
-}
-.main3 .content2 .img23 img{
-    height: 277px;
-    width: 600px;
-    padding-bottom: 10px;
     cursor: pointer;
-    transition: 0.2s;
-    border-radius: 7px;
-}
-.main3 .content2 .img23 img:hover{
-    transform: scale(1.02);
 }
 
+.content2__img .anh23 .anh2 img{
+    position: absolute;
+    height: 260px;
+    width: 50%;
+    right: 0;
+    top: 0;
+    transform: scale(1);
+    transition: 0.5s;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.content2__img .anh23 .anh3 img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 260px;
+    transform: scale(1);
+    transition: 0.5s;
+    border-radius: 7px;
+    cursor: pointer;
+}
 
+.content2__img img:hover, .content2__img .anh23 .anh2 img:hover, .content2__img .anh23 .anh3 img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
 
 
 
@@ -891,7 +992,7 @@ hr.hr{
     background-color:rgba(0, 0, 0, 0.925);
     right: 0;
     left: 0;
-    height: 500px;
+    height: 400px;
     display: flex;
     padding: 100px 100px;
 }
@@ -993,4 +1094,7 @@ hr.hr{
     opacity: 1;
     visibility: visible;
 }
+
+
+
 

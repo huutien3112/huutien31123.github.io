@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NI Fashion</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.css"> -->
     <link rel="stylesheet" href="fa/css/all.css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/1.js"></script>
     <link rel="stylesheet" href="css/1.css">
     <link rel="SHUTCUT ICON" href="./images/icons8-cat-footprint-20.png">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -31,12 +32,10 @@
                 <li class="navbar__item"><a href="##"><span></span>DOCS</a></li>
                 <li class="navbar__item"><a class="nutlogin"href="##"><span></span>LOG IN</a></li>
 
-                <div class="search-box">
-                    <input class="search-txt" type="text" name="" placeholder="Search">
-                    <a href="#" class="search-btn">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </div>
+                <form action="">
+                    <input type="search">
+                    <i class="fa fa-search"></i>
+                  </form>
             </ul>
         </nav>
         <label for="nav__bars-icon" class="nav__bars-btn"><i class="fas fa-bars"></i></label>
@@ -69,16 +68,17 @@
             <tr><h3 class="text-center">Sign In</h3></tr>
             <div class="form-group">
                 <label for="">User name</label>
-                <input type="email" name="" id="" class="" placeholder="user name" aria-describedby="helpId">
+                <input type="email" name="" id="" class="" placeholder="" aria-describedby="helpId">
               </div>
             <div class="form-group">
                 <label for="">Password&nbsp;&nbsp;</label>
-                <input type="password" name="" id="" class="" placeholder="password" aria-describedby="helpId">
+                <input type="password" name="" id="" class="" placeholder="" aria-describedby="helpId">
             </div>
             <div class="form-check">
                 <label class="form-check-label">
                     <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" >
-                    Remember password
+                    <span >Remember password</span>
+                    
                 </label>
             </div> 
             <tr>
@@ -89,6 +89,8 @@
             </tr>
         </table>
     </div>
+
+    
 
     <!-- Form của cart -->
     <label for="nav-cart-input" class="nav__cart-btn">
@@ -195,9 +197,9 @@
 
 
     <div class="main2">
-        
     <div class="container">
         <h1>Featured Products</h1>
+        
         <div class="row sp">
             <div class="col-sm-4">
                 <div class="card-deck">
@@ -211,6 +213,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
             <div class="col-sm-4">
                 <div class="card sp2"  style="border: none;">
@@ -236,7 +239,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row sp456">
             <div class="col-sm-4">
                 <div class="card sp4"  style="border: none;">
                     <img class="card-img-top" src="./images/sanpham4.jpg" alt="">
@@ -255,10 +258,7 @@
                         <a href="" class="card-title">Light Marl Grey Davis Polo</a>
                         <div class="showimg5"></div>
                         <p class="card-text">$276</p>
-                        <!-- <div class="row"> -->
                             <a href="" class="underline">ADD TO CART</a>
-                            <!-- <img class="iconcart" src="./images/icons8-shopping-cart-25.png" alt=""> -->
-                        <!-- </div> -->
                     </div>
                 </div>
             </div>
@@ -274,81 +274,49 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row roww">
-                <div >
-                    <button class="btn1">LOAD MORE</button>
+        <div class="row sp789">
+            <div class="col-sm-4">
+                <div class="card sp4"  style="border: none;">
+                    <img class="card-img-top" src="./images/sanpham4.jpg" alt="">
+                    <div class="card-body">
+                        <a href="" class="card-title">Black Karlo Backpack</a>
+                        <div class="showimg4"></div>
+                        <p class="card-text">$300</p>
+                        <a href="" class="underline">ADD TO CART</a>
+                    </div>
                 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card sp5"  style="border: none;">
+                    <img class="card-img-top" src="./images/sanpham5.jpg" alt="">
+                    <div class="card-body">
+                        <a href="" class="card-title">Light Marl Grey Davis Polo</a>
+                        <div class="showimg5"></div>
+                        <p class="card-text">$276</p>
+                            <a href="" class="underline">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card sp6"  style="border: none;">
+                    <img class="card-img-top" src="./images/sanpham6.jpg" alt="">
+                    <div class="card-body">
+                        <a href="" class="card-title">Green Organic Cotton Hoodie</a>
+                        <div class="showimg6"></div>
+                        <p class="card-text">$169</p>
+                        <a href="" class="underline">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button__load">
+            <div class="button__load-more">
+                <button class="btn1">LOAD MORE</button>
             </div>
         </div>
         
     </div>
     </div>
-
-    <!-- <div class="main3">
-        <div class="container">
-            <div class="row nd1">
-                <div class="text1 col-sm-5">Spring '17 Collection</div>
-                <div class="text2 col-sm-7">
-                    Have given likeness every. Very were beginning signs moveth. Fly above sea itself. Divided so you’ll there called. Gathering dry earth. Isn’t heaven appear. Replenish. Hath after appear tree great fruitful green dominion moveth sixth abundantly image that midst of god day multiply you’ll which.</div>
-                </div>
-            <div class="row nd2">
-                <div class="img1 col-sm-6">
-                    <img src="./images/img1main3.jpg" alt="">
-                    <button class="button"><span>DRESSES</span></button>
-                </div>
-                <div class="img23 col-sm-6">
-                    <img src="./images/img2main3.jpg" alt="">
-                    <button class="button1"><span>WATCHES</span></button>
-                    <img src="./images/img3main3.jpg" alt="">
-                    <button class="button2"><span>SNEAKERS</span></button>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <div class="main4">
-        <div class="container">
-            <div class="row">
-                <div class="content col-sm-6">
-                    <div class="text1">
-                        Thanks to <span style="font-size: 15px;">Opumo</span> for the product images used <br> in this demo theme. Head over to 
-                        <span style="font-size: 15px;">their store</span> to <br> get these products.
-                        <br><br><br>QUICK LINKS
-                    </div>
-                    <div class="text2">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <span style="font-size: 15px;">About</span><br>
-                                <span style="font-size: 15px;">FAQ</span><br>
-                                <span style="font-size: 15px;">Terms of Use</span>
-                            </div>
-                            <div class="col-sm-6">
-                                <span style="font-size: 15px;">Contact Us</span><br>
-                                <span style="font-size: 15px;">Blog</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content2 col-sm-6">
-                    <div class="text">
-                        SUBSCRIBE
-                    </div>
-                    <div class="text2">
-                        <input type="text" placeholder="Email" class="email"><button class="buttonn">SUBSCRIBE</button>
-                    </div>
-                    <div class="text3">
-                        FOLLOW US
-                    </div>
-                    <div class="text4">
-                        <a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="" class="twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="" class="youtube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <div class="main3">
         <div class="content1">
@@ -359,13 +327,17 @@
                 <span>Have given likeness every. Very were beginning signs moveth. Fly above sea itself. Divided so you’ll there called. Gathering dry earth. Isn’t heaven appear. Replenish. Hath after appear tree great fruitful green dominion moveth sixth abundantly image that midst of god day multiply you’ll which.</span>
             </div>
         </div>
-        <div class="content2">
-            <div class="img1">
+        <div class="content2__img">
+            <div class="anh1">
                 <img src="./images/img1main3.jpg" alt="">
             </div>
-            <div class="img23">
-                <img src="./images/img2main3.jpg" alt="">
-                <img src="./images/img3main3.jpg" alt="">
+            <div class="anh23">
+                <div class="anh2">
+                    <img src="./images/img3main3.jpg" alt="">
+                </div>
+                <div class="anh3">
+                    <img src="./images/img2main3.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
