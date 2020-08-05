@@ -8,7 +8,7 @@
     <title>Hope Shop</title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.min.css">
 
 
     <link rel="SHUTCUT ICON" href="./images/icons8-online-shop-favorite-24.png">
@@ -16,14 +16,14 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/responsive.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese"rel="stylesheet">
     <link rel="stylesheet" href="./fa/css/all.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&family=Balsamiq+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese" rel="stylesheet">
+   
 </head>
 
 <body>
@@ -191,11 +191,12 @@
 
                     <!-- Shopping Cart layout -->
                     <div class="header__cart">
-                        <div class="header__cart-wrap">     
+                        <div class="header__cart-wrap">
+
                             <li class="cart">
                                 <a class="cart__link" href="./shopping-cart.html">
-                                    <i class="header__cart-icon fas fa-shopping-cart"></i>
-                                    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div> -->
+                                    <!-- <i class="header__cart-icon fas fa-shopping-cart"></i> -->
+                                    <ion-icon name="basket"></ion-icon> Cart<span> 0</span>
                                 </a>
                             </li>
                             <!-- <i class="header__cart-icon fas fa-shopping-cart" aria-hidden="true"></i> -->
@@ -747,12 +748,12 @@
                                     <!-- Product item -->
                                     <a href="product.html" class="home-product-item">
                                         
-                                            <img class="home-product-item__img" src="./images/1.jpg" alt="">
+                                            <img class="home-product-item__img shop-item-image" src="./images/1.jpg" alt="">
 
-                                        <h4 class="home-product-item__name content-product-h3">Sony Android TV 4K 49</h4>
+                                        <h4 class="home-product-item__name content-product-h3 shop-item-title">Sony Android TV 4K 49</h4>
                                         <div class="home-product-item__price">
                                             <span class="home-product-item__price-old">15.400.000₫ </span>
-                                            <span class="home-product-item__price-current"> 12.400.000đ </span>
+                                            <span class="home-product-item__price-current shop-item-price"> 12.400.000đ </span>
                                         </div>
                                         <div class="home-product-item__action">
                                             <span class="home-product-item__like home-product-item__like--liked ">
@@ -781,9 +782,10 @@
                                         </div>
                                     </a>
                                     <div class="home-product-item__origin">
-                                        <!-- <span class="home-product-item__brand">Whoo</span> -->
-                                        <!-- <a href="#"  data-name="Lemon" data-price="5" class="add-to-cart product-cart">Thêm vào giỏ</a> -->
-                                        <button id="1" data-name="Sony Android TV 4K 49" data-price="12400000" class="add-to-cart product-cart"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button>
+                                        <a href="#" class="add-cart cart1">Add Cart</a>
+
+                                        <!-- <button id="1" data-name="Sony Android TV 4K 49" data-price="12400000" class="add-to-cart product-cart shop-item-button"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button> -->
+                                        
                                     </div>
                                     
                                     
@@ -827,9 +829,10 @@
                                         
                                     </a>
                                     <div class="home-product-item__origin">
-                                        <!-- <span class="home-product-item__brand">Whoo</span> -->
-                                        <!-- <a href="#"  data-name="Lemon" data-price="5" class="add-to-cart product-cart">Thêm vào giỏ</a> -->
-                                        <button id="2" data-name="Electrolux Inverter 9.5 Kg" data-price="12800000" class="add-to-cart product-cart"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button>
+                                        <a href="#" class="add-cart cart1">Add Cart</a>
+
+                                        <!-- <button id="1" data-name="Sony Android TV 4K 49" data-price="12400000" class="add-to-cart product-cart shop-item-button"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button> -->
+                                        
                                     </div>
                                 </div>
                                 <div class="col l-2-4 m-4 c-6">
@@ -871,9 +874,10 @@
                                         
                                     </a>
                                     <div class="home-product-item__origin">
-                                        <!-- <span class="home-product-item__brand">Whoo</span> -->
-                                        <!-- <a href="#"  data-name="Lemon" data-price="5" class="add-to-cart product-cart">Thêm vào giỏ</a> -->
-                                        <button id="3" data-name="Quạt điều hòa Midea AC375-19CRH" data-price="2200000" class="add-to-cart product-cart"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button>
+                                        <a href="#" class="add-cart cart2">Add Cart</a>
+
+                                        <!-- <button id="1" data-name="Sony Android TV 4K 49" data-price="12400000" class="add-to-cart product-cart shop-item-button"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button> -->
+                                        
                                     </div>
                                 </div>
                                 <div class="col l-2-4 m-4 c-6">
@@ -915,9 +919,10 @@
                                         
                                     </a>
                                     <div class="home-product-item__origin">
-                                        <!-- <span class="home-product-item__brand">Whoo</span> -->
-                                        <!-- <a href="#"  data-name="Lemon" data-price="5" class="add-to-cart product-cart">Thêm vào giỏ</a> -->
-                                        <button id="4" data-name="Beko Inverter 188 lít" data-price="4900000" class="add-to-cart product-cart"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button>
+                                        <a href="#" class="add-cart cart2">Add Cart</a>
+
+                                        <!-- <button id="1" data-name="Sony Android TV 4K 49" data-price="12400000" class="add-to-cart product-cart shop-item-button"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button> -->
+                                        
                                     </div>
                                 </div>
                                 <div class="col l-2-4 m-4 c-6">
@@ -1643,6 +1648,7 @@
 
                 </div>
             </div>
+
 
             <div class="grid wide">
                 <div class="banner">
@@ -2721,11 +2727,8 @@
     </div>
   </div>  -->
   
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <script src="./js.js"></script>
+
 </body>
-
-<script src="js.js"></script>
-<script src="./shopping-cart.js"></script>
-<script src="https://unpkg.com/ionicon@4.5.10-0/dist/ionicons.js"></script>
-
-
 </html>

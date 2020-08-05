@@ -605,6 +605,28 @@
 }
 
 /* cart */
+.cart ion-icon {
+  vertical-align: bottom;
+  font-size: 30px;
+  padding-right: 5px;
+}
+.cart a{
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.add-cart{
+
+ 
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+
 .header__cart{
   width: 150px;
   text-align: center;
@@ -658,9 +680,12 @@
   max-height: 56vh;
   /* cuộn sản phảm */
   /* overflow-y: auto; */
-
-
 }
+
+
+
+
+
 
 .header__card-item{
   display: flex;
